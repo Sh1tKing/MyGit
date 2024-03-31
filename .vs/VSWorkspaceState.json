@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\MyProject",
-    "\\thread(c++多线程)",
-    "\\thread(c++多线程)\\c++11thread"
+    ""
   ],
-  "SelectedNode": "\\thread(c++多线程)\\c++11thread\\创建线程.cpp",
+  "SelectedNode": "\\c++11thread.sln",
   "PreviewInSolutionExplorer": false
 }
