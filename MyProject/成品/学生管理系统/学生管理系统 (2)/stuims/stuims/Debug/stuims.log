@@ -1,0 +1,11 @@
+﻿  stuims.c
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\YxInfo.h(13,7): warning C4101: “buff”: 未引用的局部变量
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(96,27): warning C4473: “fscanf”: 没有为格式字符串传递足够的参数
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(96,27): message : 占位符和其参数预计 8 可变参数，但提供的却是 7 参数
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(96,27): message : 缺失的可变参数 8 为格式字符串“%f”所需
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(133,9): warning C4477: “scanf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 8 拥有了类型“double *”
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(136,27): warning C4477: “fprintf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 6 拥有了类型“double”
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(163,7): warning C4101: “xh”: 未引用的局部变量
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(207,7): warning C4101: “xh”: 未引用的局部变量
+E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\stuims\ScoreInfo.h(243,7): warning C4101: “xh”: 未引用的局部变量
+  stuims.vcxproj -> E:\MyGit\MyProject\成品\学生管理系统\学生管理系统 (2)\stuims\Debug\stuims.exe

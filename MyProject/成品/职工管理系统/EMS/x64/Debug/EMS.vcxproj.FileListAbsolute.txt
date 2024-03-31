@@ -1,0 +1,2 @@
+C:\Users\10057\Desktop\project\职工管理系统\EMS\x64\Debug\EMS.exe
+C:\Users\10057\Desktop\project\成品\职工管理系统\EMS\x64\Debug\EMS.exe
