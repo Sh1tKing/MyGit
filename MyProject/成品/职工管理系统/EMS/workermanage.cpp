@@ -264,7 +264,7 @@ void workermanage::exitsystem() {
 	exit(0);
 }
 void workermanage::del_worker() {
-	cout << "请输入要删除职工的编号:" << endl;
+	cout << "请输入要删除职工的编号:" << endl;//
 	int num,c=0;
 	cin >> num;
 	for (int i = 0; i < this->workerspace.size(); i++) {

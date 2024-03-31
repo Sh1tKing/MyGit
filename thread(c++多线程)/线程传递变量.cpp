@@ -35,7 +35,7 @@ int main() {
 	int* ptr = new int(10);
 	thread t2(foo2, ptr);
 	bool is2 = t2.joinable();
-	//delete ptr;//子线程找不到ptr内存地址了，会报错，局部变量也一样
+	//delete ptr;//子线程找不到ptr内存地址了，会报错，局部变量也一样.
 	if (is2) t2.join();
 	cout << *ptr;
 
