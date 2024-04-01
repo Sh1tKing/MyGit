@@ -4,6 +4,7 @@
 using namespace std;
 void foo1(int& x) {
 	x += 2;
+	//fuck
 }
 void foo2(int* x) {
 	*x += 1;
