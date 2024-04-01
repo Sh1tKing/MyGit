@@ -3,7 +3,7 @@
 #include<memory>
 using namespace std;
 void foo1(int& x) {
-	x += 1;
+	x += 2;
 }
 void foo2(int* x) {
 	*x += 1;
