@@ -21,5 +21,11 @@
     <ClCompile Include="线程传递变量.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="多线程数据共享.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lock_guard&amp;unique_lock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
