@@ -27,5 +27,14 @@
     <ClCompile Include="lock_guard&amp;unique_lock.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="call_once().cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="condition_variable使用场景.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="线程池样例.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
