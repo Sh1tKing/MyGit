@@ -5,8 +5,8 @@
 class Log {
 public:
 
-	Log(const Log& log) = delete;//É¾³ý¸´ÖÆº¯Êý
-	Log& operator=(const Log& log) = delete;//É¾³ýµÈÓÚºÅ¸³Öµ
+	Log(const Log& log) = delete;//É¾ï¿½ï¿½ï¿½ï¿½ï¿½Æºï¿½ï¿½ï¿½
+	Log& operator=(const Log& log) = delete;//É¾ï¿½ï¿½ï¿½ï¿½ï¿½ÚºÅ¸ï¿½Öµ
 	static Log& GetInstance() {
 		static Log* log = nullptr;
 		if (!log) log = new Log;

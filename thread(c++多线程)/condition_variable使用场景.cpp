@@ -1,7 +1,7 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<mutex>
 #include<thread>
-#include<condition_variable>//Ìõ¼þ±äÁ¿
+#include<condition_variable>//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #include<queue>
 std::queue<int> g_queue;
 std::condition_variable g_cv;
@@ -24,7 +24,7 @@ void consumer() {
 		//bool isf = !g_queue.empty();
 		g_cv.wait(lock, []() {
 			return !g_queue.empty();
-			});//µÈ´ý¶ÓÁÐÊÇ·ñ²»Îª¿Õ£¬ÕæÖ´ÐÐ£¬·ñ²»Ö´ÐÐ
+			});//ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½Õ£ï¿½ï¿½ï¿½Ö´ï¿½Ð£ï¿½ï¿½ï¿½Ö´ï¿½ï¿½
 		int value = g_queue.front();
 		g_queue.pop();
 		std::cout << "Consumer:" << value << std::endl;
