@@ -1,7 +1,7 @@
 #include<iostream>
 #include<mutex>
 #include<thread>
-#include<condition_variable>//条件变量
+#include<condition_variable>//鏉′欢鍙橀噺
 #include<queue>
 std::queue<int> g_queue;
 std::condition_variable g_cv;
@@ -11,7 +11,7 @@ void producer() {
 		{
 			std::unique_lock<std::mutex>  lock(mtx);
 			g_queue.push(i);
-			g_cv.notify_one();//通知
+			g_cv.notify_one();//閫氱煡
 			std::cout << "Producer:" << i << std::endl;
 		}
 		std::this_thread::sleep_for(std::chrono::microseconds(100));
@@ -24,7 +24,7 @@ void consumer() {
 		//bool isf = !g_queue.empty();
 		g_cv.wait(lock, []() {
 			return !g_queue.empty();
-			});//等待队列是否不为空，真执行，否不执行
+			});//绛夊緟闃熷垪鏄惁涓嶄负绌猴紝鐪熸墽琛岋紝鍚︿笉鎵ц
 		int value = g_queue.front();
 		g_queue.pop();
 		std::cout << "Consumer:" << value << std::endl;
