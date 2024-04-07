@@ -14,5 +14,5 @@ int main() {
 	}
 	for (int i = 0; i < 10; i++) maxn = max(maxn, a[i]);
 	cout << n - maxn;
-	
+	return 0;
 }
