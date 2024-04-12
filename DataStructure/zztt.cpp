@@ -9,6 +9,7 @@ int main() {
         else b[i] = max(a[i], b[i - 1] + a[i]);
         ans = max(ans, b[i]);
     }
+
     cout << ans;
     return 0;
 }
