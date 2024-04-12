@@ -1,19 +1,14 @@
-﻿#include<iostream>
-#include<string>
-#include<vector>
-#include<algorithm>
+﻿#include<bits/stdc++.h>
 using namespace std;
-const int N = 1e5 + 10;
-int n, a[10], maxn = -1;
-string s;
+int n, a[200020], b[200020], i, ans = -2147483647;
 int main() {
-	cin >> n;
-	for (int i = 0; i < n; i++) {
-		cin >> s;
-		a[s[s.size() - 1] - '0'] = max(a[s[0] - '0'] + 1, a[s[s.size() - 1] - '0']);
-	}
-	for (int i = 0; i < 10; i++) maxn = max(maxn, a[i]);
-	cout << n - maxn;
-	return 0;
-	//
+    cin >> n;
+    for (i = 1; i <= n; i++) {
+        cin >> a[i];
+        if (i == 1) b[i] = a[i];
+        else b[i] = max(a[i], b[i - 1] + a[i]);
+        ans = max(ans, b[i]);
+    }
+    cout << ans;
+    return 0;
 }
