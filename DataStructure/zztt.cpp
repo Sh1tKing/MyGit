@@ -1,15 +1,14 @@
-﻿#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
-int n, a[200020], b[200020], i, ans = -2147483647;
-int main() {
-    cin >> n;
-    for (i = 1; i <= n; i++) {
-        cin >> a[i];
-        if (i == 1) b[i] = a[i];
-        else b[i] = max(a[i], b[i - 1] + a[i]);
-        ans = max(ans, b[i]);
-    }
-
-    cout << ans;
-    return 0;
+int main()
+{
+	int a = 0;
+	cout << a << endl;
+	int* p = &a;
+	*p = 5;
+	cout << a << endl;
+	int& r = a;
+	r = 3;
+	cout << a << endl;
+	return 0;
 }
