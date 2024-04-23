@@ -1,0 +1,20 @@
+<view class="check" >
+  <text style="position: relative; left: 25rpx; top: 9rpx">Online:</text>
+  <text style="position: relative; left: -67rpx; top: 59rpx">Work:</text>
+</view>
+<view class="icon" style="font-size: 20rpx">
+  <view class="icon-a">
+    <image style="width: 180rpx; height: 188rpx; display: inline-block; box-sizing: border-box; position: relative; left: 41rpx; top: 100rpx" src="../../assets/temp.png" mode=""/>
+      <text style="position: relative; left: 360rpx; top: -66rpx; width: 466rpx; height: 132rpx; display: block; box-sizing: border-box" >{{temperature}}°C</text>
+      </view>
+  <image src="../../assets/bright.png" style="position: relative; left: 29rpx; top: 62rpx; width: 180rpx; height: 188rpx; display: inline-block; box-sizing: border-box"></image>
+  <image style="width: 154rpx; height: 154rpx; display: inline-block; box-sizing: border-box; position: relative; left: 41rpx; top: 162rpx" src="../../assets/fan.png" mode=""></image>
+</view>
+<view class="sliderLED" style="position: relative; left: 0rpx; top: 126rpx">
+  <slider bindchange="sliderChangeLED" min="0" max="100" value="{{sliderValue}}" style="position: relative; left: 340rpx; top: 696rpx; width: 574rpx; height: 44rpx; display: block; box-sizing: border-box"></slider>
+  <text style="position: relative; left: 29rpx; top: 635rpx">当前LED亮度：{{sliderLEDPercent}}</text>
+</view>
+<view class="sliderFan">
+  <slider bindchange="sliderChangeFAN" min="0" max="100" value="{{sliderValue}}" style="position: relative; left: 340rpx; top: 613rpx; width: 574rpx; height: 44rpx; display: block; box-sizing: border-box"></slider>
+  <text style="position: relative; left: 24rpx; top: 551rpx">当前风扇转率：{{sliderFANPercent}}</text>
+</view>

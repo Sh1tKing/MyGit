@@ -1,0 +1,73 @@
+<!-- 轮播图 -->
+<view class="swiper">
+  <swiper 
+  circular="true"
+  indicator-dots 
+  indicator-color="#fff"
+  autoplay interval="2000" 
+  >
+    <swiper-item>
+    <image src="../../assets/5.png" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../assets/6.png" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../assets/7.png" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!--info  -->
+<view class="info">
+  <text user-select="true" space="emsp">
+  AlanPo  MJTam  RonnyLay  DashTam  TomTo
+  </text>
+</view>
+<!--导航-->
+<view class="nav">
+  <view>
+    <navigator url="/pages/list/list">
+      <image src="../../assets/7.png" mode=""/>
+      <text>rock</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+      <image src="../../assets/8.png" mode=""/>
+      <text>rock</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+    <image src="../../assets/9.png" mode=""/>
+    <text>rock</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+    <image src="../../assets/8.png" mode="top left"/>
+    <text>rock</text>
+    </navigator>
+  </view>
+</view>
+<!-- repre -->
+<view class="hot">
+  <scroll-view class="scroll-x" scroll-x>
+    <view>
+      <image src="/assets/4.jpg"></image>
+      <text>111</text>
+    </view>
+    <view>
+      <image src="/assets/5.png"></image>
+      <text>222</text>
+    </view>
+    <view>
+      <image src="/assets/6.png"></image>
+      <text>333</text>
+    </view>
+    <view>
+      <image src="/assets/7.png"></image>
+      <text>444</text>
+    </view>
+  </scroll-view>
+</view>

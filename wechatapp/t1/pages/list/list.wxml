@@ -1,0 +1,3 @@
+<!--pages/list/list.wxml-->
+<navigator open-type="navigateBack" delta="1">back</navigator>
+<text>操你妈逼</text>

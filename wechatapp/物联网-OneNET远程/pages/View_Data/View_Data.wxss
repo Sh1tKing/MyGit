@@ -1,0 +1,19 @@
+.icon{
+  height: 100rpx;
+  width: 150rpx;
+} 
+.icon text{
+  font-size: 100rpx;
+  width: 100%;
+}
+wx-slider .wx-slider-handle-wrapper{
+    height: 12rpx;
+    width: 60%;
+}
+.slider-light .wx-slider-track {
+  background: linear-gradient(to right, #424753 0%, #b8c5c5 100%);
+}
+page{
+  height: 100vh;
+  background-color: #ffffff;
+}

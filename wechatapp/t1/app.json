@@ -1,0 +1,33 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/list/list"
+  ],
+  "window": {
+    "navigationBarTitleText": "Mr.",
+    "navigationBarBackgroundColor": "#040C0C",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "list": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "/assets/1.jpg",
+        "selectedIconPath": "/assets/2.jpg"
+      },
+      {
+        "list": "shit",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "/assets/3.jpg",
+        "selectedIconPath": "/assets/4.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
