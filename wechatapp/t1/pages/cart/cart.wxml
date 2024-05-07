@@ -1,5 +1,0 @@
-<!--pages/cart/cart.wxml-->
-<view>{{num}}</view>
-<button bindtap="updatenum">update num</button>
-<view >{{userinfo.name}}     {{userinfo.age}}</view>
-<button bindtap="updateuser">update user</button>
