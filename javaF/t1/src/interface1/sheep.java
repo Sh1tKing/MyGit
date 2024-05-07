@@ -1,4 +1,4 @@
-package test12;
+package interface1;
 
 public class sheep extends animal{
     @Override

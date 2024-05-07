@@ -1,4 +1,4 @@
-package test12;
+package interface1;
 
 public class frog extends animal implements Swim{
     @Override

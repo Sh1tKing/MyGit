@@ -1,4 +1,4 @@
-package test12;
+package interface1;
 public class t {
     public static void main(String[] args) {
         dog d1=new dog(12,"shi");
