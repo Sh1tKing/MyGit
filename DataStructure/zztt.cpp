@@ -1,33 +1,36 @@
-#include <stdio.h>
+#include<iostream>
+#include<math.h>
+using namespace std;
+class CPoint {
+public:
+	int x, y;
+	CPoint(int x,int y):x(x),y(y){}
+	CPoint(){}
+};
+class CLine :public CPoint {
+public:
+	int x1, y1, x2, y2;
+	CLine(int x1,int y1,int x2,int y2):x1(x1),y1(y1), x2(x2), y2(y2) {}
+	double length() {
+		return sqrt((x1  - x2 )* (x1 - x2) + (y1  - y2)* (y1 - y2));
+	}
+	double k() {
+		return (y2 - y1) * 1.0 / (x2 - x1);
+	}
+};
+class CCirecle :public CPoint {
+public:
+	int r;
+	CCirecle(int x1, int y1, int r) :CPoint(x1,y1),r(r) {}
+	double sqare() {
+		return 3.1415926 * r * r;
+	}
+};
 int main() {
-    int n;
-
-    printf("Input n(n<=10):\n");
-    scanf("%d", &n);
-    int arr[5];
-    printf("Input %d numbers:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-    int max_idx = 0, min_idx = 0;
-    for (int i = 1; i < n; i++) {
-        if (arr[i] > arr[max_idx]) {
-            max_idx = i;
-        }
-        if (arr[i] < arr[min_idx]) {
-            min_idx = i;
-        }
-    }
-
-    int temp = arr[max_idx];
-    arr[max_idx] = arr[min_idx];
-    arr[min_idx] = temp;
-
-    printf("Exchange results:");
-    for (int i = 0; i < n; i++) {
-        printf("%5d", arr[i]);
-    }
-    printf("\n");
-
-    return 0;
+	CLine l1 = CLine(1, 4, 6, 7);
+	printf("%.2f\n", l1.k());
+	printf("%.2f\n", l1.length());
+	
+	CCirecle c1 = CCirecle(1, 4, 6);
+	printf("%.2f\n", c1.sqare());
 }
