@@ -48,10 +48,13 @@
     <ClCompile Include="单向最短路径Dijkstra算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="zztt.cpp">
+    <ClCompile Include="图dfs.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="图dfs.cpp">
+    <ClCompile Include="shiyan.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zztt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

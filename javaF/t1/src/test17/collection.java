@@ -3,6 +3,7 @@ package test17;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.function.Consumer;
 
 public class collection {
     public static void main(String[] args) {
@@ -15,13 +16,17 @@ public class collection {
         arr.add(s2);
         arr.add(s3);
         arr.add(s4);
-        Iterator<student> it =arr.iterator();
-        while(it.hasNext()){
-            student tmp=it.next();
-            if(tmp.getAge()==34){
-                it.remove();
-            }else
-            System.out.println(tmp.toString());
-        }
+//        Iterator<student> it =arr.iterator();
+//        while(it.hasNext()){
+//            student tmp=it.next();
+//            if(tmp.getAge()==34){
+//                it.remove();
+//            }else
+//            System.out.println(tmp.toString());
+//        }
+//        for(student it:arr){
+//            System.out.println(it.toString());
+//        }
+        arr.forEach(student->System.out.println(student.toString()));
     }
 }
