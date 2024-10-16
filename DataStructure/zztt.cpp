@@ -1,23 +1,20 @@
-#include<iostream>
+#include <iostream>
+#include <stdio.h>
 using namespace std;
-class Counter {
-private:
-	int key;
-public:
-	Counter(int key):key(key){}
-	Counter(){}
-	int getkey() {
-		return key;
+void solution_1(long long n) {
+	long long sum = 0;
+	for (int i = 1; i <= n; i++) {
+		sum += i;
 	}
-	Counter operator+(Counter& b) {
-		Counter tmp;
-		tmp.key = this->key + b.key;
-		return tmp;
-	}
-};
+	cout << "第一种解法:" << sum << endl;
+}
+void solution_2(long long n) {
+	long long sum = (1 + n) * n / 2;
+	cout << "第二种解法:" << sum << endl;
+}
 int main() {
-	Counter a(4);
-	Counter b(8);
-	Counter c = a + b;
-	cout << c.getkey();
+	long long n;
+	cin >> n;
+	solution_1(n);
+	solution_2(n);
 }

@@ -18,6 +18,10 @@ struct ListNode* list_create(int array[], int n) {
 	p->next = NULL;
 	return list;
 }
+struct ListNode* list_init() {
+	struct ListNode* list = (struct ListNode*)malloc(sizeof(struct ListNode));
+	return list;
+}
 void list_visit(struct ListNode* list) {
 	if (list == NULL) return;
 	for (struct ListNode* p = list->next; p; p = p->next) { 
@@ -82,10 +86,20 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
 	}
 
 }
+struct ListNode* backInsert(ListNode* list,int val) {
+	struct ListNode* p = list->next;
+	while (p->next != NULL) {
+		p = p->next;
+	}
+	struct ListNode* tmp = (struct ListNode*)malloc(sizeof(struct ListNode));
+	tmp->val = val;
+	p->next = tmp;
+	tmp->next = NULL;
+}
 int main() {
-	int a[3] = { 1,2,4 };
-	int b[3] = { 1,3,4 };
-	struct ListNode* list1 = list_create(a, 3);
-	struct ListNode* list2 = list_create(b, 3);
+	int a[5] = { 1,2,3,4,5 };
+	struct ListNode* list1 = list_create(a, 5);
+	list_visit(list1);
+	backInsert(list1, 5);
 	list_visit(list1);
 }

@@ -57,9 +57,33 @@
     <ClCompile Include="zztt.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="sqlist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exp2-1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="doublelist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="zuoti.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="csv2\mio.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="csv2\parameters.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="csv2\reader.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="csv2\writer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidcsv.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
